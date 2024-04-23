@@ -1,2 +1,2 @@
 # sense-and-color
-component library playgroud
+component library playground
