@@ -1,7 +1,7 @@
 import { ColorModeScript } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
-import { SenseAndColor } from "./SenseAndColor"
+import { SenseAndColor } from "./sense-and-color"
 // import reportWebVitals from "./reportWebVitals"
 // import * as serviceWorker from "./serviceWorker"
 
