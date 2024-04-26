@@ -5,6 +5,6 @@ import { SenseAndColor } from "./sense-and-color"
 
 test("renders learn react link", () => {
   render(<SenseAndColor />)
-  const linkElement = screen.getByText(/learn chakra/i)
+  const linkElement = screen.getByRole('button', { name: /switch to/i })
   expect(linkElement).toBeInTheDocument()
 })
