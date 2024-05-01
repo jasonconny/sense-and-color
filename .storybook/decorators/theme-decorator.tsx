@@ -1,4 +1,4 @@
-import '@fontsource-variable/source-code-pro';
+import '@fontsource-variable/open-sans';
 import { ThemeProvider } from '../../src/providers/theme-provider';
 
 export const ThemeDecorator = (Story: any) => (
