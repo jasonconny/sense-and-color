@@ -6,7 +6,7 @@ import {
 import { ColorModeSwitcher } from "./components"
 import { ThemeProvider } from './providers/theme-provider';
 
-export const SenseAndColor = () => (
+export const SenseAndColor: React.FC = () => (
   <ThemeProvider>
     <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
