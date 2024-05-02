@@ -2,8 +2,19 @@ import { ComponentStyleConfig, defineStyle, defineStyleConfig } from '@chakra-ui
 
 const baseStyle = defineStyle({
   color: 'current',
-  mt: 0
+  letterSpacing: 'normal',
 });
+
+const sizes = {
+  sm: defineStyle({
+    fontSize: 'xl',
+    lineHeight: 'short'
+  }),
+  lg: defineStyle({
+    fontSize: '2xl',
+    lineHeight: 'short'
+  })
+}
 
 const variants = {
   bold: defineStyle({
@@ -11,11 +22,15 @@ const variants = {
   }),
   regular: defineStyle({
     fontWeight: 'normal'
+  }),
+  semibold: defineStyle({
+    fontWeight: 'semibold'
   })
 };
 
-export const textTheme: ComponentStyleConfig = defineStyleConfig({
+export const headingTheme: ComponentStyleConfig = defineStyleConfig({
   baseStyle,
+  sizes,
   variants,
   defaultProps: {
     variant: 'regular'

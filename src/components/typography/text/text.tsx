@@ -5,7 +5,7 @@ export const Text = forwardRef<TexProps, 'p'>((props, ref) => {
   const { ...rest } = props;
 
   return (
-    <ChakraText ref={ref} {...rest} />
+    <ChakraText {...rest} ref={ref} />
   );
 });
 

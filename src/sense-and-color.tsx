@@ -2,16 +2,21 @@ import * as React from "react"
 import {
   Box,
   Grid,
-} from "@chakra-ui/react"
+  Heading,
+  Text
+} from "./components"
 import { ColorModeSwitcher } from "./components"
 import { ThemeProvider } from './providers/theme-provider';
 
 export const SenseAndColor: React.FC = () => (
   <ThemeProvider>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-      </Grid>
-    </Box>
+    <Grid minH="100vh" p={3}>
+      <ColorModeSwitcher justifySelf="flex-end" />
+
+      <Box textAlign="center">
+        <Heading as="h1">Sense and Color</Heading>
+        <Text>hold away despair</Text>
+      </Box>
+    </Grid>
   </ThemeProvider>
 )

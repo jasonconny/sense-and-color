@@ -3,6 +3,7 @@ import { globalStyles } from './global-styles';
 import { theme as chakraDefaultTheme, extendTheme, type ThemeConfig } from '@chakra-ui/react';
 
 // typography
+import { headingTheme as Heading } from '../components/typography/heading/heading.theme';
 import { textTheme as Text } from '../components/typography/text/text.theme';
 
 const config: ThemeConfig = {
@@ -13,6 +14,7 @@ const config: ThemeConfig = {
 // Chakra defaults to extend
 const themeExtensions = {
   components: {
+    Heading,
     Text,
   },
   config,
