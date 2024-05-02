@@ -2,6 +2,7 @@ import { ColorModeScript } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import { SenseAndColor } from "./sense-and-color"
+import { senseAndColorTheme } from './theme';
 // import reportWebVitals from "./reportWebVitals"
 // import * as serviceWorker from "./serviceWorker"
 
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(container)
 
 root.render(
   <React.StrictMode>
-    <ColorModeScript />
+    <ColorModeScript initialColorMode={senseAndColorTheme.config.initialColorMode} />
     <SenseAndColor />
   </React.StrictMode>,
 )
