@@ -1,7 +1,8 @@
 import { ComponentStyleConfig, defineStyle, defineStyleConfig } from '@chakra-ui/react';
 
 const baseStyle = defineStyle({
-  color: 'current',
+  color: 'inherit',
+  fontSize: 'lg',
   mt: 0
 });
 
