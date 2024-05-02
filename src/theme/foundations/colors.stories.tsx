@@ -6,7 +6,7 @@ import { chakra } from '@chakra-ui/react';
 import React from 'react';
 
 const meta: Meta = {
-  title: 'Sense And Color/Tokens/Colors',
+  title: 'Sense And Color/Theme/Tokens/Colors',
 };
 
 export default meta;
@@ -64,9 +64,7 @@ const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, 
               <WrapItem>
                 <Box
                   borderRadius="lg"
-                  boxShadow={
-                    '0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)'
-                  }
+                  boxShadow="md"
                   key={`${colorKey}.${colorNumber}`}
                   width={32}
                 >
@@ -111,6 +109,7 @@ const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, 
 };
 
 export const Default: Story = {
+  name: 'Color Palette',
   render: () => {
 
     return (

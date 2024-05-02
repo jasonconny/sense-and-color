@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Text } from './text';
 
 const meta: Meta<typeof Text> = {
-  title: 'Sense and Color/Typography/Text',
+  title: 'Sense and Color/Components/Typography/Text',
   component: Text,
   tags: ['autodocs'],
   argTypes: {
