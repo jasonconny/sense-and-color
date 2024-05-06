@@ -6,6 +6,8 @@ import { theme as chakraDefaultTheme, extendTheme, type ThemeConfig } from '@cha
 import { headingTheme as Heading } from '../components/typography/heading/heading.theme';
 import { textTheme as Text } from '../components/typography/text/text.theme';
 
+// System sets initial value
+// App color mode is detached from system color mode changes
 const config: ThemeConfig = {
   initialColorMode: 'system',
   useSystemColorMode: false
