@@ -11,3 +11,4 @@ npm-debug.log*
 
 # temp
 /src/stories
+/src/reportWebVitals.ts

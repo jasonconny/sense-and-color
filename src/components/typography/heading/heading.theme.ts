@@ -1,4 +1,8 @@
-import { ComponentStyleConfig, defineStyle, defineStyleConfig } from '@chakra-ui/react';
+import {
+  ComponentStyleConfig,
+  defineStyle,
+  defineStyleConfig,
+} from '@chakra-ui/react';
 
 const baseStyle = defineStyle({
   color: 'inherit',
@@ -8,24 +12,24 @@ const baseStyle = defineStyle({
 const sizes = {
   sm: defineStyle({
     fontSize: 'xl',
-    lineHeight: 'short'
+    lineHeight: 'short',
   }),
   lg: defineStyle({
     fontSize: '2xl',
-    lineHeight: 'short'
-  })
-}
+    lineHeight: 'short',
+  }),
+};
 
 const variants = {
   bold: defineStyle({
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   }),
   regular: defineStyle({
-    fontWeight: 'normal'
+    fontWeight: 'normal',
   }),
   semibold: defineStyle({
-    fontWeight: 'semibold'
-  })
+    fontWeight: 'semibold',
+  }),
 };
 
 export const headingTheme: ComponentStyleConfig = defineStyleConfig({
@@ -33,6 +37,6 @@ export const headingTheme: ComponentStyleConfig = defineStyleConfig({
   sizes,
   variants,
   defaultProps: {
-    variant: 'regular'
-  }
+    variant: 'regular',
+  },
 });

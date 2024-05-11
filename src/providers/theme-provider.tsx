@@ -8,9 +8,5 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  return (
-    <ChakraProvider theme={senseAndColorTheme}>
-      {children}
-    </ChakraProvider>
-  );
+  return <ChakraProvider theme={senseAndColorTheme}>{children}</ChakraProvider>;
 };

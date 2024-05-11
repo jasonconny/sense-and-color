@@ -8,21 +8,21 @@ const meta: Meta<typeof Heading> = {
   argTypes: {
     children: {
       control: 'text',
-      description: 'Set the text'
+      description: 'Set the text',
     },
     size: {
       control: 'select',
       defaultValue: 'regular',
       description: 'Set font-size',
-      options: ['sm', 'lg']
+      options: ['sm', 'lg'],
     },
     variant: {
       control: 'select',
       defaultValue: 'regular',
       description: 'Set font-weight',
-      options: ['regular', 'semibold', 'bold']
-    }
-  }
+      options: ['regular', 'semibold', 'bold'],
+    },
+  },
 };
 
 export default meta;
@@ -31,11 +31,7 @@ type Story = StoryObj<typeof Heading>;
 
 export const Default: Story = {
   args: {
-    children: 'Terrapin Station'
+    children: 'Terrapin Station',
   },
-  render: (args) => (
-    <Heading {...args}>
-      {args.children}
-    </Heading>
-  )
+  render: (args) => <Heading {...args}>{args.children}</Heading>,
 };

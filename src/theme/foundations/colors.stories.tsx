@@ -16,40 +16,43 @@ type Story = StoryObj<typeof colors>;
 type ColorPaletteContainerProps = {
   colorKey: string;
   colorLabel: string;
-}
+};
 
 const colorLabels = [
   {
     key: 'base',
-    label: 'Base'
+    label: 'Base',
   },
   {
     key: 'neutral',
-    label: 'Neutral'
+    label: 'Neutral',
   },
   {
     key: 'primary',
-    label: 'Primary'
+    label: 'Primary',
   },
   {
     key: 'feature',
-    label: 'Feature'
+    label: 'Feature',
   },
   {
     key: 'success',
-    label: 'Success'
+    label: 'Success',
   },
   {
     key: 'warning',
-    label: 'Warning'
+    label: 'Warning',
   },
   {
     key: 'error',
-    label: 'Error'
+    label: 'Error',
   },
 ];
 
-const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, colorLabel }) => {
+const ColorPaletteContainer: React.FC<ColorPaletteContainerProps> = ({
+  colorKey,
+  colorLabel,
+}) => {
   const { colors } = senseAndColorTheme;
   return (
     <Box>
@@ -62,16 +65,14 @@ const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, 
           {Object.keys(colors[colorKey]).map((colorNumber) => {
             return (
               <WrapItem key={`${colorKey}.${colorNumber}`}>
-                <Box
-                  borderRadius="lg"
-                  boxShadow="md"
-                  width={32}
-                >
+                <Box borderRadius="lg" boxShadow="md" width={32}>
                   <Box
                     borderTopRadius="lg"
                     height={32}
                     sx={{ backgroundColor: `${colors[colorKey][colorNumber]}` }}
-                  >&nbsp;</Box>
+                  >
+                    &nbsp;
+                  </Box>
                   <Text
                     color="text.secondary"
                     fontSize="sm"
@@ -110,7 +111,6 @@ const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, 
 export const Default: Story = {
   name: 'Color Palette',
   render: () => {
-
     return (
       <VStack alignItems="flex-start" spacing={8}>
         {colorLabels.map((color) => {
