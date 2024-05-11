@@ -1,9 +1,9 @@
-import { Box, Heading, Text, VStack, Wrap, WrapItem } from '../../components';
-import { Meta, StoryObj } from '@storybook/react';
+import { chakra } from '@chakra-ui/react';
 import { colors } from './colors';
 import { senseAndColorTheme } from '../sense-and-color-theme';
-import { chakra } from '@chakra-ui/react';
-import React from 'react';
+import { Box, Heading, Text, VStack, Wrap, WrapItem } from '../../components';
+import { Meta, StoryObj } from '@storybook/react';
+import * as React from 'react';
 
 const meta: Meta = {
   title: 'Sense And Color/Theme/Tokens/Colors',
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof colors>;
 
 type ColorPaletteContainerProps = {
   colorKey: string;
-  colorLabel: any;
+  colorLabel: string;
 }
 
 const colorLabels = [
@@ -61,11 +61,10 @@ const ColorPaletteContainer: React.FC<ColorPaletteContainerProps>= ({ colorKey, 
         <>
           {Object.keys(colors[colorKey]).map((colorNumber) => {
             return (
-              <WrapItem>
+              <WrapItem key={`${colorKey}.${colorNumber}`}>
                 <Box
                   borderRadius="lg"
                   boxShadow="md"
-                  key={`${colorKey}.${colorNumber}`}
                   width={32}
                 >
                   <Box

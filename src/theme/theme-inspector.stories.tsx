@@ -1,5 +1,5 @@
-import { Heading, useTheme } from '../components';
 import { ObjectInspector } from 'react-inspector';
+import { Heading, useTheme } from '../components';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta = {

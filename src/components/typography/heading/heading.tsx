@@ -1,5 +1,5 @@
-import { Heading as ChakraHeading, forwardRef } from '@chakra-ui/react'
 import { type HeadingProps } from './heading.types';
+import { Heading as ChakraHeading, forwardRef } from '@chakra-ui/react'
 
 export const Heading = forwardRef<HeadingProps, 'p'>((props, ref) => {
   const { as, children, size, variant = 'bold', ...rest } = props;
