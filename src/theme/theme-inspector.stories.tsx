@@ -1,6 +1,7 @@
 import { ObjectInspector } from 'react-inspector';
 import { Heading, useTheme } from '../components';
 import type { Meta, StoryObj } from '@storybook/react';
+import * as React from 'react';
 
 const meta: Meta = {
   title: 'Sense and Color/Theme/Theme Inspector',
@@ -8,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-type Story = StoryObj<JSX.Element>;
+type Story = StoryObj<React.ReactElement>;
 
 const ChakraTheme = () => {
   const senseAndColorTheme = useTheme();
