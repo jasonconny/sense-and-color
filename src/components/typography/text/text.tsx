@@ -1,5 +1,5 @@
-import { Text as ChakraText, forwardRef } from '@chakra-ui/react'
 import { type TexProps } from './text.types';
+import { Text as ChakraText, forwardRef } from '@chakra-ui/react'
 
 export const Text = forwardRef<TexProps, 'p'>((props, ref) => {
   const { ...rest } = props;

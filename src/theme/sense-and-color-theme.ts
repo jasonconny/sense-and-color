@@ -1,6 +1,7 @@
+/*eslint sort-imports: ["off", { "allowSeparatedGroups": true }]*/
 import { foundations } from './foundations';
 import { globalStyles } from './global-styles';
-import { theme as chakraDefaultTheme, extendTheme, type ThemeConfig } from '@chakra-ui/react';
+import { type ThemeConfig, theme as chakraDefaultTheme, extendTheme } from '@chakra-ui/react';
 
 // typography
 import { headingTheme as Heading } from '../components/typography/heading/heading.theme';
