@@ -1,5 +1,5 @@
 import { defineStyle } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools'
+import { mode } from '@chakra-ui/theme-tools';
 
 export const globalStyles = defineStyle((props) => {
   return {
@@ -10,6 +10,6 @@ export const globalStyles = defineStyle((props) => {
       minHeight: '100vh',
       minWidth: '20rem',
       overflowX: 'hidden',
-    }
-  }
+    },
+  };
 });

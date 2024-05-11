@@ -1,12 +1,7 @@
-import { ColorModeSwitcher } from "./components"
+import { ColorModeSwitcher } from "./components";
 import { ThemeProvider } from './providers/theme-provider';
-import {
-  Box,
-  Grid,
-  Heading,
-  Text
-} from "./components"
-import * as React from "react"
+import { Box, Grid, Heading, Text } from './components';
+import * as React from 'react';
 
 export const SenseAndColor: React.FC = () => (
   <ThemeProvider>
@@ -19,4 +14,4 @@ export const SenseAndColor: React.FC = () => (
       </Box>
     </Grid>
   </ThemeProvider>
-)
+);
