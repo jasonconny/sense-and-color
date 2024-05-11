@@ -1,0 +1,13 @@
+# IDE
+/.idea
+
+# misc
+.DS_STORE
+npm-debug.log*
+
+.eslintcache
+
+/types/sense-and-color.types.d.ts
+
+# temp
+/src/stories
