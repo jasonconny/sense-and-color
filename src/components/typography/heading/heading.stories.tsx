@@ -31,7 +31,7 @@ type Story = StoryObj<typeof Heading>;
 
 export const Default: Story = {
   args: {
-    children: 'Terrapin Station',
+    children: 'Sense and Color',
   },
   render: (args) => <Heading {...args}>{args.children}</Heading>,
 };
