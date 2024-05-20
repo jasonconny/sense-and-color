@@ -1,8 +1,12 @@
-import '@fontsource-variable/open-sans';
+import { Grid } from '@chakra-ui/react';
 import { ThemeProvider } from '../../src/providers/theme-provider';
+import {ColorModeSwitcher} from '../../src/components';
 
 export const ThemeDecorator = (Story: any) => (
   <ThemeProvider>
-    {Story()}
+    <Grid>
+      <ColorModeSwitcher justifySelf="flex-end" />
+      <Story/>
+    </Grid>
   </ThemeProvider>
 )
