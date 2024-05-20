@@ -10,10 +10,12 @@ const preview: Preview = {
   decorators,
   parameters: {
     controls: {
+      exclude: /^(_.*|htmlTranslate.*)$/,
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+      sort: 'requiredFirst',
     },
     chakra: {
       theme: senseAndColorTheme

@@ -37,6 +37,6 @@ export const headingTheme: ComponentStyleConfig = defineStyleConfig({
   sizes,
   variants,
   defaultProps: {
-    variant: 'regular',
+    variant: 'bold',
   },
 });

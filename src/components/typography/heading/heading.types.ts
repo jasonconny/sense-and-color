@@ -3,9 +3,13 @@ import React from 'react';
 
 export interface HeadingProps extends ChakraHeadingProps {
   children: React.ReactNode;
-  size?: 'sm' | 'lg';
-  /*
-   * Sets the `font-weight` property without `<strong />`
+  /**
+   * Size of the Heading. If no option is passed then defaults to responsive sizing.
    * */
+  size?: 'sm' | 'lg';
+  /**
+   * Sets the `font-weight` property without `<strong />`
+   * @default bold
+   */
   variant?: 'bold' | 'regular' | 'semibold';
 }

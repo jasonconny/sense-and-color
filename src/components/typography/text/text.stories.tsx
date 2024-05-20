@@ -1,23 +1,11 @@
 import { Text } from './text';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof Text> = {
+const meta = {
   title: 'Sense and Color/Components/Typography/Text',
   component: Text,
   tags: ['autodocs'],
-  argTypes: {
-    children: {
-      control: 'text',
-      description: 'Set the text',
-    },
-    variant: {
-      control: 'select',
-      defaultValue: 'regular',
-      description: 'Set the font-weight',
-      options: ['regular', 'bold'],
-    },
-  },
-};
+} satisfies Meta<typeof Text>;
 
 export default meta;
 
@@ -28,4 +16,4 @@ export const Default: Story = {
     children: 'Light the song with sense and color, hold away despair.',
   },
   render: (args) => <Text {...args}>{args.children}</Text>,
-};
+} satisfies Story;
